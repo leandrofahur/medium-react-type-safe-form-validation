@@ -1,7 +1,10 @@
 #root {
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
 
   margin: 0;
   padding: 0;
@@ -13,6 +16,12 @@ form {
   flex-direction: column;
   width: 400px;
   gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .labelForm {
@@ -30,4 +39,14 @@ button {
   color: white;
   cursor: pointer;
   margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  opacity: 0.8;
 }
